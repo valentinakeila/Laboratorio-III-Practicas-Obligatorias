@@ -27,7 +27,7 @@ const Login = () => {
 
     return (
         <>
-            <div>
+           
                 <div>
                     <form onSubmit={onSubmitHandler}>
                         <div >
@@ -43,7 +43,7 @@ const Login = () => {
                         <button type="submit" className="button">Registrarse</button>
                     </form>
                 </div>
-            </div>
+        
             <p>{userNameInput}</p>
         </>
     );
