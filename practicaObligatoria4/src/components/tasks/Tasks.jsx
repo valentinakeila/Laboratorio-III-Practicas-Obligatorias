@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import TaskItem from '../taskItem/TaskItem';
 
-
 const Tasks = ({ tasks, onDeleteTask }) => {
   const tasksMapped = tasks.map((task) => (
     <TaskItem
@@ -16,12 +15,7 @@ const Tasks = ({ tasks, onDeleteTask }) => {
 };
 
 Tasks.propTypes = {
-  tasks: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      task: PropTypes.string.isRequired,
-    })
-  ).isRequired,
+  tasks: PropTypes.array.isRequired,
   onDeleteTask: PropTypes.func.isRequired,
 };
 

@@ -7,12 +7,10 @@ const TASKS = [
   {
     id: 1,
     task: 'Hacer la comida',
-    
   },
   {
     id: 2,
     task: 'Limpiar la cocina',
-    
   },
 ];
 

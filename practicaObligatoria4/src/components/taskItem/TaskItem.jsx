@@ -18,9 +18,7 @@ const TaskItem = ({ id, task, deleteTask }) => {
 
   return (
     <div className={`task-item ${completed ? 'completed' : ''}`}>
-      <div>
-        {task} 
-      </div>
+      <div>{task}</div>
       <div>
         <button onClick={taskCompleted}>
           {completed ? 'No completada' : 'Completada'}
