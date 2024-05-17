@@ -10,6 +10,12 @@ const NewTask = ({ onAddTask }) => {
 
   const submitTaskHandler = (event) => {
     event.preventDefault();
+    const trim = task.trim();
+
+    if (trim === '') {
+      alert("No se puede ingresar tareas vacías")
+      return;
+    }
     const newTask = {
       id: Math.random(),
       task: task,
